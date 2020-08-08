@@ -498,12 +498,36 @@
           <div class="footer-continer-form">
             <b class="form-invite">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
             <form type="" action="">
-              <input class="footer-form-text" type="text">
-              <button class="button-footer-form">Подписаться</button>
+              <div class="footer-email-form">
+              <input class="footer-form-text" type="email" name="user-email" id="footer-input-text" recovered placeholder=" ">
+              <label class="footer-input-text-label" for="footer-input-text">E-mail*</label>
+              </div>
+              <button type="submit" class="button-footer-form">Подписаться
+                                <svg class="footer-icon-plane">
+                                  <use href="./images/sprite.svg#icon-plane">
+                                  </use>
+                                </svg>
+              </button>
+              
             </form>
           </div>
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <form action="" class="modal-form">
+        <h2 class="modal-form-title"></h2>
+        <input type="text" class="modal-form-input">
+        <input type="text" class="modal-form-input">
+        <input type="text" class="modal-form-input">
+        <textarea class="modal-form-message" name="" id="" cols="30" rows="10"></textarea>
+        <label class="modal-form-option-label" for="">
+          <input class="modal-form-chekbox" type="checkbox" name="" id="">
+          <span class="modal-form-span">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </span>
+        </label>
+        <button type="submit">Отправить</button>
+       
+      </form>
+    </div>
   </body>
 </html>
