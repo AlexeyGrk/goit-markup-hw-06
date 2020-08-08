@@ -525,6 +525,32 @@ img {
 .social-list-item-link-icon-footer:hover {
   background-color: transparent;
 }
+/* Form */
+.form-container {
+  width: 570px;
+  height: 86px;
+}
+.form-invite {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.form-text {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
 /* portfolio */
 .portfolio-border {
   border-bottom: 1px solid #ececec;
