@@ -361,14 +361,13 @@
           </div>
           <div class="footer-continer-form">
             <b class="form-invite">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-            <form type="" action="">
+            <form>
               <div class="footer-email-form">
                 <input
                   class="footer-form-text"
                   type="email"
                   name="user-email"
                   id="footer-input-text"
-                  recovered
                   placeholder=" "
                 />
                 <label class="footer-input-text-label" for="footer-input-text"
@@ -387,7 +386,7 @@
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
-      <form action="" class="modal-form">
+      <form class="modal-form">
         <h2 class="modal-form-title">
           Оставьте свои данные, мы вам перезвоним
         </h2>
@@ -404,7 +403,9 @@
             class="modal-form-input"
             id="user-modal-name"
           />
-          <label class="modal-form-input-label" for="">Имя</label>
+          <label class="modal-form-input-label" for="user-modal-name"
+            >Имя</label
+          >
           <svg class="modal-form-icon">
             <use href="./images/sprite.svg#icon-modal-people"></use>
           </svg>
@@ -416,7 +417,9 @@
             class="modal-form-input"
             id="usel-modal-tel"
           />
-          <label class="modal-form-input-label" for="user-tel"> Телефон</label>
+          <label class="modal-form-input-label" for="usel-modal-tel">
+            Телефон</label
+          >
           <svg class="modal-form-icon">
             <use href="./images/sprite.svg#icon-modal-phone"></use>
           </svg>
@@ -428,7 +431,9 @@
             class="modal-form-input"
             id="user-modal-mail"
           />
-          <label class="modal-form-input-label" for="user-mail">Почта</label>
+          <label class="modal-form-input-label" for="user-modal-mail"
+            >Почта</label
+          >
           <svg class="modal-form-icon">
             <use href="./images/sprite.svg#icon-modal-mail"></use>
           </svg>
@@ -437,20 +442,26 @@
           <textarea
             class="modal-form-message"
             name="user-message"
+            id="user-modal-message"
             placeholder="Введите текст"
           ></textarea>
-          <label class="modal-form-input-label-message" for="user-message"
+          <label class="modal-form-input-label-message" for="user-modal-message"
             >Комментарий</label
           >
         </div>
 
         <label class="modal-form-option-label">
           <input
-            class="modal-form-chekbox"
+            class="modal-form-chekbox is-hidden"
             type="checkbox"
             name="policy"
             value="accept-policy"
           />
+          <span class="modal-form-custom-checkbox">
+            <svg class="modal-form-custom-checkbox-icon">
+              <use href="./images/sprite.svg#icon-check-box-noactive"></use>
+            </svg>
+          </span>
           <span class="modal-form-span"
             >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
           </span>
