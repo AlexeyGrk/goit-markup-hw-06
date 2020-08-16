@@ -1,12 +1,13 @@
 /* portfolio-gallery */
-.portfolio-list-back:hover::before {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-  opacity: 1;
+.portfolio-list-back {
+  &:hover::before {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+    opacity: 1;
+  }
 }
-
 .portfolio-list-back {
   width: 370px;
   height: 294px;
@@ -14,8 +15,10 @@
   overflow: hidden;
   display: block;
 }
-.portfolio-list-link:hover .portfolio-list-item-app-text {
-  opacity: 1;
+.portfolio-list-link {
+  &:hover .portfolio-list-item-app-text {
+    opacity: 1;
+  }
 }
 .portfolio-list-item-title {
   font-weight: 700;
@@ -62,8 +65,10 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
-.portfolio-list-item:hover .portfolio-list-item-app-text {
-  transform: translateY(0%);
+.portfolio-list-item {
+  &:hover .portfolio-list-item-app-text {
+    transform: translateY(0%);
+  }
 }
 
 .portfolio-list p {
@@ -84,9 +89,11 @@
   box-sizing: border-box;
   overflow: hidden;
 }
-.portfolio-list-item .portfolio-list-item-app-text:hover {
-  opacity: 1;
-  color: #ffffff;
+.portfolio-list-item-app-text {
+  .portfolio-list-item &:hover {
+    opacity: 1;
+    color: #ffffff;
+  }
 }
 .portfolio-list-item:hover {
   border: 1px solid #eeeeee;

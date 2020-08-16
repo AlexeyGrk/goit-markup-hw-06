@@ -52,9 +52,6 @@
   padding-top: 65px;
   margin-bottom: 20px;
 }
-.social-container-list-item:not(:last-child) {
-  margin-right: 10px;
-}
 .social-container-list-item-link {
   display: flex;
   align-items: center;
@@ -67,7 +64,11 @@
 }
 .social-container-list-item {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
+
 .social-container-list-item :hover {
   background-color: $accent-color;
 }
@@ -75,7 +76,8 @@
   width: 20px;
   height: 20px;
   fill: #ffffff;
-}
-.social-list-item-link-icon-footer:hover {
-  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
 }

@@ -43,13 +43,22 @@
   border-radius: 4px;
   padding-left: 35px;
 }
-.modal-form-input:focus,
-.modal-form-message:focus {
-  outline: none;
-  border: 1px solid #2196f3;
+.modal-form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 35px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
 }
+
 .modal-form-input-wrapper {
   position: relative;
   margin-bottom: 28px;
@@ -92,6 +101,13 @@
   resize: none;
   padding-left: 16px;
   padding-top: 12px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
 }
 .modal-form-input:focus ~ .modal-form-icon {
   fill: $accent-color;
