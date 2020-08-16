@@ -94,7 +94,7 @@
   padding-top: 12px;
 }
 .modal-form-input:focus ~ .modal-form-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .modal-form-message::placeholder {
   font-family: Roboto;

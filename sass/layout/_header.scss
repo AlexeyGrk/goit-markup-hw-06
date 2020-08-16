@@ -47,7 +47,7 @@
   letter-spacing: 0.02em;
 }
 .main-nav-item-link {
-  color: var(--main-color-title);
+  color: $main-color-title;
   /* margin-top: 32px;
   margin-bottom: 32px; */
   padding-top: 32px;
@@ -71,15 +71,15 @@
 
 .main-nav-item-link:hover,
 .main-nav-item-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .adress-item-link:hover,
 .adress-item-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .adress-item-link {
   display: flex;
   align-items: center;
-  color: var(--main-color-text);
+  color: $main-color-text;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

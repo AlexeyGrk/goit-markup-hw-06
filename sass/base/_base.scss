@@ -1,6 +1,6 @@
 body {
-  background-color: var(--primary-white-color);
-  color: var(--main-color-text);
+  background-color: $primary-white-color;
+  color: $main-color-text;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -8,7 +8,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--main-color-title);
+  color: $main-color-title;
   padding: 0px;
   margin: 0px;
 }
